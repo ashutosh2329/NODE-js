@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/",function(req, res){
 	res.sendFile(__dirname + "/index.html");
+	res.send("https://sv443.net/jokeapi/v2/joke/Programming?type=single&contains=debugging&amount=10");
 });
 app.get("/bmiCalculator",function(req, res){
 	res.sendFile(__dirname + "/bmiCalculator.html");
